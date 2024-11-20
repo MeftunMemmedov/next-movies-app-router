@@ -37,9 +37,9 @@ const SearchBar = () => {
       },500)
     }
 
-    useEffect(()=>{
-        getMovies()
-    },[])
+    // useEffect(()=>{
+    //     getMovies()
+    // },[])
     useEffect(()=>{
         searchInput==''?setResutlsVisible(false):setResutlsVisible(true)
     },[searchInput])
@@ -56,6 +56,7 @@ const SearchBar = () => {
       onChange={(e)=>setSearchInput(e.target.value)}
       className='w-full h-8 rounded-2xl bg-zinc-800 text-white px-5' 
       onBlur={handleBlur}
+      onFocus={getMovies}
       />
       
       <SearchResults 

@@ -5,6 +5,7 @@ import { getAllMovies } from '@/redux/movieSlice'
 import { getCurrentUser, removeFromWatchList, setWLTriggeredFalse } from '@/redux/userSlice'
 import { useDispatch, useSelector } from 'react-redux'
 import axios from 'axios'
+import ScrollToTop from '@/components/ScrollToTop'
 
 const WatchList = () => {
   const [triggered2, setTriggered2]=useState(false)
@@ -49,6 +50,7 @@ useEffect(()=>{
 
   return (
     <main>
+            <ScrollToTop />
       <section>
         <div className={`container m-auto ${watchList.length==0?'h-screen flex justify-center items-center':'grid lg:grid-cols-4 md:grid-cols-3'}`} >
         {

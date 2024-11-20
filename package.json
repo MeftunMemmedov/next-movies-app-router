@@ -16,6 +16,7 @@
     "@mui/icons-material": "^5.16.7",
     "@mui/material": "^5.16.6",
     "@mui/material-nextjs": "^5.16.2",
+    "@next/env": "^15.0.2",
     "@reduxjs/toolkit": "^2.2.7",
     "axios": "^1.7.3",
     "burger-menu": "^2.0.0",

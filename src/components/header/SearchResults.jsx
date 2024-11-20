@@ -23,7 +23,7 @@ const SearchResults = ({results, resutlsVisible, setResultsVisible, searchInput}
             results.slice(0,8).map((result,i)=>{
                 return (
                     <Link href={`/movies/${result.title}`} key={i}>
-                        <div className='w-full flex my-3 hover:bg-gray-600'>
+                        <div className='w-full flex my-3 hover:bg-gray-600 p-1 h-24 rounded-md'>
                             <div className='w-1/5  overflow-hidden rounded-md relative'>
                                 <Image src={result.poster} fill className='w-full h-full object-cover'/>
                             </div>

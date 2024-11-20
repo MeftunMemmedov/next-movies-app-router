@@ -50,7 +50,8 @@ export const movieSlice=createSlice({
         movies:[],
         movie:[],
         watchList:localStorage.getItem('wacthList')?JSON.parse(localStorage.getItem('watchList')):[],
-        trailerVisible:false
+        trailerVisible:false,
+        filteredMovies:[]
     },
     reducers:{
         addToWatchList:(state, action)=>{
@@ -58,6 +59,9 @@ export const movieSlice=createSlice({
         },
         toggleTrailerVisible:(state)=>{
             state.trailerVisible=!state.trailerVisible
+        },
+        filterMovies:(state, action)=>{
+            state.movies=action.payload
         }
     }
     ,
@@ -84,6 +88,6 @@ export const movieSlice=createSlice({
     }   
 })
 
-export const {toggleTrailerVisible}=movieSlice.actions
+export const {toggleTrailerVisible, filterMovies}=movieSlice.actions
 
 export default movieSlice.reducer

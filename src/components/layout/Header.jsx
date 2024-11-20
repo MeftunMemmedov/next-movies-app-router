@@ -33,7 +33,7 @@ const Header = ({}) => {
           </Link>
         </div>
 
-        <div className='lg:w-1/4 w-1/3 relative '>
+        <div className='lg:w-1/4 w-1/2 relative'>
           <SearchBar />
         </div>
 
