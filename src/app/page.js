@@ -13,11 +13,11 @@ export const metadata = {
 };
 
 export default async function Home() {
-  const data = await fetchMovies("/Movies?select=*",80);
+  const data = await fetchMovies("/Movies?select=*", 80);
   return (
     <>
       <main className="">
-      <ScrollToTop />
+        <ScrollToTop />
         <section className="">
           <div className="md:h-auto h-[600px] relative flex justify-end items-center mb-12">
             <div className="w-full h-full absolute z-40 home-box-1">

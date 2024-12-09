@@ -15,9 +15,6 @@ const Header = ({}) => {
   const dispatch=useDispatch()
 
   const userId=localStorage.getItem('userId')
-  useEffect(()=>{
-    console.log(watchList)
-  },[watchList])
   
   useEffect(()=>{
     dispatch(getCurrentUser(userId))

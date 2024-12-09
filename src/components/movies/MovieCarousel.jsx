@@ -40,11 +40,9 @@ const MovieCarousel = ({ movies }) => {
             slidesPerView: 3,
           },
           425: {
-            slidesPerView: 2,
-          },
-          320: {
             slidesPerView: 1,
           },
+         
         }}
         spaceBetween={30}
         modules={[FreeMode, Navigation]}

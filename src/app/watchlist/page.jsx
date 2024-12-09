@@ -33,7 +33,6 @@ const WatchList = () => {
             }
         })
     } catch (error) {
-        console.log(error, 'fuck')
     }finally{
         setTriggered2(false)
     }

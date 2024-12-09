@@ -1,5 +1,5 @@
-const apiUrl = process.env.MOVIE_API_URL;
-const apiKey = process.env.MOVIE_API_KEY;
+const apiUrl = process.env.NEXT_PUBLIC_MOVIE_API_URL;
+const apiKey = process.env.NEXT_PUBLIC_MOVIE_API_KEY;
 
 export const options = {
   headers: {

@@ -1,21 +1,20 @@
-import SignUpForm from '@/components/user/SignUpForm'
-import React from 'react'
+import SignUpForm from "@/components/user/SignUpForm";
+import axios from "axios";
+import React from "react";
 
-export const metadata={
-    title:'Movies | Sign up'
-}
+export const metadata = {
+  title: "Movies | Sign up",
+};
 
 const SignUp = () => {
-   
+  
   return (
-    <div className='h-screen'>
-        
-      <div className='container h-full flex justify-center items-center'>        
-        <SignUpForm />        
+    <div className="h-screen">
+      <div className="container h-full flex justify-center items-center">
+        <SignUpForm />
       </div>
-      
     </div>
-  )
-}
+  );
+};
 
-export default SignUp
+export default SignUp;

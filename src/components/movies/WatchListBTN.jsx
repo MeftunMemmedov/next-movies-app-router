@@ -43,7 +43,7 @@ const WatchListBTN = ({movie, setTriggered2, btnTitle, styles, iconSize}) => {
                 }
             })
         } catch (error) {
-            console.log(error, 'fuck')
+            console.log(error)
         } finally {
             setTriggered(false)
 
